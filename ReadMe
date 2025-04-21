@@ -1,0 +1,35 @@
+# 🔍 Fingerprint Matching Using HOG Features and SVM
+
+This project implements a basic fingerprint matching system using image processing and machine learning techniques.
+It extracts **Histogram of Oriented Gradients (HOG)** features from fingerprint images and trains a **Support Vector Machine (SVM)** classifier to identify the best match for a given test fingerprint.
+
+---
+
+## 🎯 Objectives
+
+- To demonstrate fingerprint recognition using classical machine learning.
+- To extract robust feature descriptors (HOG) from fingerprint images.
+- To train an SVM model to learn unique fingerprint patterns.
+- To predict and visualize the best match for a given fingerprint image from a training set.
+
+---
+
+## 🧠 How It Works
+
+1. **Data Preparation**:
+   - Loads images from a specified training folder.
+   - Assigns a numeric label to each image.
+
+2. **Feature Extraction**:
+   - Converts images to grayscale.
+   - Resizes them to a uniform size (128x128).
+   - Extracts HOG features for shape and pattern analysis.
+
+3. **Model Training**:
+   - Uses an SVM classifier with a standard scaler pipeline.
+   - Trains the model on extracted HOG features.
+
+4. **Fingerprint Matching**:
+   - Extracts features from the test fingerprint image.
+   - Predicts similarity scores with all training images.
+   - Visualizes the test image and its best match from the training set.
